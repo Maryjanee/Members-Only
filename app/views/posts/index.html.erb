@@ -1,5 +1,11 @@
 <h1>Index View</h1>
 
-<%= @posts.each do |post| %>
-  <p>  </p>
+<% @posts.each do |post| %>
+
+  <div>
+    <h3><%= post.title %></h3>
+    <h6><%= post.user.username %></h6>
+    <p><%= post.body %></p>
+  </div>
+
 <% end %>
