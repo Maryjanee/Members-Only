@@ -7,5 +7,15 @@
     <h6><%= post.user.username %></h6>
     <p><%= post.body %></p>
   </div>
+  
 
 <% end %>
+
+<% devise_controller :user do
+    match "sign_out", :to => "sessions#destroy", via: [:delete]
+  end
+%>
+
+<%= link_to sign_out_path, :method => "delete" do %>
+
+<% end%>
