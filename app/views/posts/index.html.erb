@@ -1,8 +1,14 @@
-<h1>Index View</h1>
+<div class="">
+<% if user_signed_in? %>
+    <%= link_to "Log out", destroy_user_session_path, :method=>'delete'%>
+<% else %>
+    <%= link_to "login", new_user_session_path %>
+<% end %>
+</div>
 
-
+<div class="container">
 <% @posts.each do |post| %>
-  <div>
+  <div class ="post">
     <h3><%= post.title %></h3>
    <h6><%= post.user.username if user_signed_in? %></h6>
     <p><%= post.body %></p>
@@ -10,10 +16,5 @@
   
 <% end %>
 
-
-<% if user_signed_in? %>
-    <%= link_to "Log out", destroy_user_session_path, :method=>'delete'%>
-<% else %>
-    <%= link_to "login", new_user_session_path %>
-<% end %>
+</div>
 

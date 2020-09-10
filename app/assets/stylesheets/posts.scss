@@ -1,3 +1,22 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+*{
+  font-family: 'Raleway', sans-serif;
+}
+
+.container{
+  width:90%;
+  margin:2rem auto;
+  
+  .post{
+  border:1px solid grey;
+  padding-left:1rem;
+  margin: 5px 0;
+  
+}
+
+  
+}
+
