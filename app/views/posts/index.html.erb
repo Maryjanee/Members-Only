@@ -1,17 +1,30 @@
-<div class="">
-<% if user_signed_in? %>
-    <%= link_to "Log out", destroy_user_session_path, :method=>'delete'%>
-<% else %>
-    <%= link_to "login", new_user_session_path %>
-<% end %>
+
+
+<div class="top-banner">
+  <h1 class="title">Members Only</h1>
+  <p class="intro-text">
+    Welcome to Members Only, the most exclusive social media website ever created! 
+    If you're a member, log in and post whatever you want with 100%, 
+    authentication-protected anonymity! Not a member? Read other people's posts and 
+    guess who wrote them!
+  </p>
+  <div class="sign-in-box">
+    <% if user_signed_in? %>
+      <%= link_to "Log out", destroy_user_session_path, :method=>'delete'%>
+    <% else %>
+      <%= link_to "login", new_user_session_path %>
+    <% end %>
+  </div>
 </div>
 
 <div class="container">
 <% @posts.each do |post| %>
   <div class ="post">
-    <h3><%= post.title %></h3>
-   <h6><%= post.user.username if user_signed_in? %></h6>
-    <p><%= post.body %></p>
+    <h3 class="title">
+      <%= post.title %> 
+      <span class="author"><%= "by #{post.user.username}" if user_signed_in? %></span>
+    </h3>
+    <p class="body"><%= post.body %></p>
   </div>
   
 <% end %>
