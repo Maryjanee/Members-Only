@@ -19,11 +19,11 @@ body {
     padding: 10px 10px;
     border: 1px solid black;
 
-   .form-field {
-    border: 1px solid red;
-   }
+    .form-field {
+      border: 1px solid red;
+    }
 
-    .field, 
+    .field,
     .actions {
       display: flex;
       margin: 5px 0;
@@ -35,7 +35,7 @@ body {
 
     .actions {
       justify-content: center;
-}
+    }
 
     input[type="submit"] {
       width: 150px;
@@ -60,6 +60,7 @@ body {
         padding: 0.4rem 1rem;
       }
     }
+
     .remember-field {
       display: flex;
       flex-direction: row-reverse;
