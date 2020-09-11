@@ -4,8 +4,8 @@
 Unregistered users can only view all created posts but cannot see the post's author.  
 
 
-![A list of posts when a user isn't signed in](assets/images/Not_Signed_In.png)
-![A list of posts when a member is signed in](assets/images/Signed-In.png)
+![A list of posts when a user isn't signed in](app/assets/images/Not_Signed_In.png)
+![A list of posts when a member is signed in](app/assets/images/Signed-In.png)
 
 
 ## Built With
