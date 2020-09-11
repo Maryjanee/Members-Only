@@ -16,23 +16,23 @@ body {
     flex-direction: column;
     width: 30%;
     background-color: rgb(255, 255, 240);
-    padding: 5px;
+    padding: 10px 10px;
     border: 1px solid black;
 
-    .field {
+    .field, 
+    .actions {
       display: flex;
       margin: 5px 0;
+    }
 
-      * {
-        flex: 1;
-      }
+    .field > * {
+      flex: 1;
     }
 
     .actions {
-      display: flex;
       justify-content: center;
 
-      input {
+      input[type="submit"] {
         width: 150px;
         flex: 0;
         font-weight: 500;
