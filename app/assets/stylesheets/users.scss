@@ -18,15 +18,10 @@ body {
     background-color: rgb(255, 255, 240);
     padding: 10px 10px;
     border: 1px solid black;
-   
-   .form-field{
-     border:1px solid red;
+
+   .form-field {
+    border: 1px solid red;
    }
-   
-  //  .posts-btn{
-  //    padding:2rem;
-  //    border:1px solid grey;
-  //  }
 
     .field, 
     .actions {
@@ -41,58 +36,54 @@ body {
     .actions {
       justify-content: center;
 }
-      input[type="submit"] {
-        width: 150px;
-        flex: 0;
-        font-weight: 500;
-        padding: 5px 15px;  
-      
+
+    input[type="submit"] {
+      width: 150px;
+      flex: 0;
+      font-weight: 500;
+      padding: 5px 15px;
     }
-    .submit-btn{
-      display:flex;
-      justify-content:center;
+
+    .submit-btn {
+      display: flex;
+      justify-content: center;
     }
   }
-  .log-in{
-    width:20rem;
-    
-    .field{
-     
+
+  .log-in {
+    width: 20rem;
+
+    .field {
       align-items: center;
-      
-      input{
+
+      input {
         padding: 0.4rem 1rem;
       }
     }
-    .remember-field{
-      display :flex;
-      flex-direction:row-reverse;
-      justify-content:flex-end;
-  
-      *{
-        flex:0;
-        
+    .remember-field {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      * {
+        flex: 0;
       }
-      label{
-        flex-basis:42%;
+
+      label {
+        flex-basis: 42%;
       }
-   
     }
-    
-    
   }
-  .links{
-       display:flex;
-       flex-direction:column;
-       width:21rem;
-       
-      .sign-up{
-      
-        margin-top:0;
-        
-      }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    align-items: center;
+    padding: 10px 0;
+
+    .sign-up {
+      margin-top: 0;
     }
-     
+  }
 }
-
-

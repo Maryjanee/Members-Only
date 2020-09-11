@@ -8,6 +8,23 @@
 
 body {
   background-color: rgba(112, 148, 214, 0.4);
+
+  .sign-in-box {
+    position: absolute;
+    right: 15px;
+  }
+
+  .button_to > input {
+    border-radius: 20%;
+    margin: 5px;
+    padding: 5px 10px;
+    float: right;
+    background-color: rgb(255, 255, 240);
+    font-size: 1.1rem;
+    font-weight: 400;
+    outline: none;
+    border: 0.5px solid black;
+  }
 }
 
 .top-banner {
