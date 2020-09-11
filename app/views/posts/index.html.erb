@@ -8,9 +8,12 @@
     authentication-protected anonymity! Not a member? Read other people's posts and 
     guess who wrote them!
   </p>
+  
   <div class="sign-in-box">
     <% if user_signed_in? %>
-      <%= link_to "Log out", destroy_user_session_path, :method=>'delete'%>
+ 
+     <%= button_to  "Create A Post", new_post_path, :method=>'get', :html =>{:class => 'posts-btn' }%>
+      <%= button_to "Log out", destroy_user_session_path, :method=>'delete', :html =>{:class => 'posts-btn' }%>
     <% else %>
       <%= link_to "login", new_user_session_path %>
     <% end %>
