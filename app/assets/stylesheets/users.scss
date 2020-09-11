@@ -18,6 +18,10 @@ body {
     background-color: rgb(255, 255, 240);
     padding: 10px 10px;
     border: 1px solid black;
+   
+   .form-field{
+     border:1px solid red;
+   }
 
     .field, 
     .actions {
@@ -31,13 +35,60 @@ body {
 
     .actions {
       justify-content: center;
-
+}
       input[type="submit"] {
         width: 150px;
         flex: 0;
         font-weight: 500;
-        padding: 5px 15px;
-      }
+        padding: 5px 15px;  
+      
+    }
+    .submit-btn{
+      display:flex;
+      justify-content:center;
     }
   }
+  .log-in{
+    width:20rem;
+    
+    .field{
+     
+      align-items: center;
+      
+      input{
+        padding: 0.4rem 1rem;
+      }
+    }
+    .remember-field{
+      display :flex;
+      flex-direction:row-reverse;
+      justify-content:flex-end;
+  
+      *{
+        flex:0;
+        
+      }
+      label{
+        flex-basis:42%;
+      }
+   
+    }
+    
+    
+  }
+  .links{
+       display:flex;
+       flex-direction:column;
+       width:21rem;
+       
+       
+      .sign-up{
+      
+        margin-top:0;
+        
+      }
+    }
+     
 }
+
+

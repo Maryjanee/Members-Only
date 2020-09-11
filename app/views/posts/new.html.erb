@@ -1,8 +1,16 @@
-<h1>Create a new post!</h1>
+<h1 class="title">Create a new post!</h1>
+<div class="form-container log-in">
 <%= form_for @post do |f| %>
+  <div class="field">
   <%= label(:post, :title, 'Post Title' ) %>
-  <%= f.text_field :title %><br/>
+  <%= f.text_field :title , html:{ :class => 'form_field'} %><br/>
+  </div>
+  <div class="field">
   <%= label(:post, :body, 'Post Body' ) %>
-  <%= f.text_area :body %><br/>
+  <%= f.text_area :body , html:{ :class => 'form_field'} %><br/>
+  </div>
+  <div class="submit-btn">
   <%= f.submit %>
+  </div>
 <% end %>
+</div>
