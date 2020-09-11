@@ -31,7 +31,8 @@ To get a local copy up and running follow these simple example steps.
 git clone git@github.com:Maryjanee/Members-Only.git
 ```
 2. Run `cd Members-Only` to move inside the downloaded repository.
-3. Run `bundle install` to download the project's dependencies.
+3. Run `bundle install` and `Yarn install` seperatel to download the project's dependencies.
+4. Run `yarn check --integrity` to verify that the package dependencies have not been altered.
 4. Run `rails db:migrate` to set up your local database.
 5. Run `rails console` to open a console in the environment. From here you will be able to create and view users, posts and comments.
 
