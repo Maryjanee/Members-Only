@@ -1,0 +1,79 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: rgba(112, 148, 214, 0.4);
+
+  .sign-in-box {
+    position: absolute;
+    right: 15px;
+  }
+
+  .button_to > input {
+    border-radius: 20%;
+    margin: 5px;
+    padding: 5px 10px;
+    float: right;
+    background-color: rgb(255, 255, 240);
+    font-size: 1.1rem;
+    font-weight: 400;
+    outline: none;
+    border: 0.5px solid black;
+  }
+}
+
+.top-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 15px;
+
+  .title {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+    font-weight: 200;
+    width: 700px;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .sign-in-box {
+    position: absolute;
+    right: 15px;
+  }
+}
+
+.container {
+  width: 700px;
+  max-width: 100%;
+  margin: 2rem auto;
+
+  .post {
+    border: 1px solid grey;
+    padding: 0 1rem;
+    margin: 5px 0;
+    background-color: rgb(255, 255, 240);
+
+    .title {
+      font-size: 1.15rem;
+
+      .author {
+        font-size: 0.95rem;
+        font-weight: 400;
+      }
+    }
+
+    .body {
+      font-size: 1rem;
+    }
+  }
+}
