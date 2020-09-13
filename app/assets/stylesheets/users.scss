@@ -1,0 +1,90 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(255, 255, 240);
+    padding: 10px 10px;
+    border: 1px solid black;
+
+    .form-field {
+      border: 1px solid red;
+    }
+
+    .field,
+    .actions {
+      display: flex;
+      margin: 5px 0;
+    }
+
+    .field > * {
+      flex: 1;
+    }
+
+    .actions {
+      justify-content: center;
+    }
+
+    input[type="submit"] {
+      width: 150px;
+      flex: 0;
+      font-weight: 500;
+      padding: 5px 15px;
+    }
+
+    .submit-btn {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .log-in {
+    width: 20rem;
+
+    .field {
+      align-items: center;
+
+      input {
+        padding: 0.4rem 1rem;
+      }
+    }
+
+    .remember-field {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      * {
+        flex: 0;
+      }
+
+      label {
+        flex-basis: 42%;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    align-items: center;
+    padding: 10px 0;
+
+    .sign-up {
+      margin-top: 0;
+    }
+  }
+}

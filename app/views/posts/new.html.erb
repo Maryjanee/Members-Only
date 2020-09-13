@@ -1,0 +1,30 @@
+
+<div class="top-banner">
+  <h1 class="title">Create a new post!</h1>
+
+  <div class="sign-in-box">
+      <% if user_signed_in? %>
+  
+      <%= button_to  "View All Posts", posts_path, :method=>'get'%>
+      <%= button_to "Log Out", destroy_user_session_path, :method=>'delete', :html => {class: 'posts-btn'} %>
+      <% else %>
+        <%= button_to "Log In", new_user_session_path %>
+      <% end %>
+  </div>
+</div>
+
+<div class="form-container log-in">
+<%= form_for @post do |f| %>
+  <div class="field">
+  <%= label(:post, :title, 'Post Title' ) %>
+  <%= f.text_field :title , html:{ :class => 'form_field'} %><br/>
+  </div>
+  <div class="field">
+  <%= label(:post, :body, 'Post Body' ) %>
+  <%= f.text_area :body , html:{ :class => 'form_field'} %><br/>
+  </div>
+  <div class="submit-btn">
+  <%= f.submit %>
+  </div>
+<% end %>
+</div>
