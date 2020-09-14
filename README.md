@@ -1,4 +1,4 @@
-# Project: Micro-Reddit
+# Project: MembersOnly
 
 > This project involved creating a blog Application for a ficticious clubhouse where only registered and signed in members can create posts and view posts written by all members of the clubhouse.
 Unregistered users can only view all created posts but cannot see the post's author.  
